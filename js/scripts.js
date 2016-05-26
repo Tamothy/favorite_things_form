@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $("#blanks form").submit(function (event) {
     var nameInput = $("input#name").val();
-    var foodInput = $("input#food").val();
-    var musicInput = $("input#music").val();
+    var foodInput = $("select#foods").val();
+    var musicInput = $("input:radio[name=music]:checked").val();
     var colorInput = $("input#color").val();
 
     $(".name").text(nameInput);
